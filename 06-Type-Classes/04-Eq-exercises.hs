@@ -11,9 +11,9 @@ instance Eq TwoIntegers where
 data StringOrInt = TisAnInt Int | TisAString String
 
 instance Eq StringOrInt where
-  (==) (TisAnInt a) (TisAnInt a') = a == a'
+  (==) (TisAnInt a)   (TisAnInt a')   = a == a'
   (==) (TisAString a) (TisAString a') = a == a'
-  (==) _ _ = False
+  (==)  _              _              = False
 
 data Pair a = Pair a a
 
